@@ -6,6 +6,16 @@ import (
 	"unsafe"
 )
 
+const VkReturn = 0x0D
+const VkVolumeMute = 0xAD
+const VkVolumeDown = 0xAE
+const VkVolumeUp = 0xAF
+const VkMediaNextTrack = 0xB0
+const VkMediaPrevTrack = 0xB1
+const VkMediaStop = 0xB2
+const VkMediaPause = 0xB3
+const VkPlay = 0xFA
+
 type keyboardInput struct {
 	wVk         uint16
 	wScan       uint16
